@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/firebase_options.dart';
+import 'package:tic_tac_toe/screens/start_game_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +23,7 @@ class TicTacToeApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Tic Tac Toe',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const Center(),
+      home: const StartGameScreen(),
     );
   }
 }
